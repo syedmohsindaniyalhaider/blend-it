@@ -1,0 +1,42 @@
+.rangeInput::-webkit-slider-runnable-track {
+  cursor: pointer;
+  height: 1px;
+  background-color: #5f60ff;
+}
+.rangeInput {
+  -webkit-appearance: none;
+  height: 0px;
+  margin: 10px 0px;
+}
+.rangeInput::-webkit-slider-thumb {
+  border-width: 10px solid yellow;
+  border-radius: 3px;
+  background: red !important;
+  color: white !important;
+  cursor: pointer;
+  margin-top: -8px;
+}
+
+.firstItem {
+  margin-left: -4px;
+}
+
+.lineSize {
+  font-size: 10px;
+}
+
+.itemTop {
+  z-index: -100;
+  bottom: 12px !important;
+}
+
+.beginItem {
+  margin-left: 60px;
+}
+.endItem {
+  margin-left: 55px;
+}
+
+.lastItem {
+  margin-left: 69px;
+}

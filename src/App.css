@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+@import "bootstrap/dist/css/bootstrap.min.css";
+.breadcrumb-item + .breadcrumb-item::before {
+  content: var(--bs-breadcrumb-divider, ">");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headerBg {
+  background: #f0f0f0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.titleBg {
+  background-color: #5f60ff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.lightGrey {
+  color: #b0b0b0;
+}
+
+.done {
+  color: black;
+}
+
+.active {
+  color: #5f60ff !important;
+}
+
+.backBtnActive {
+  color: #5f60ff;
+  border: 1px solid #5f60ff;
+}
+.backBtnActive:hover {
+  color: #5f60ff;
+}
+
+.backBtn {
+  color: #b0b0b0;
+  border: 1px solid #b0b0b0;
+}
+.backBtn:hover {
+  color: #b0b0b0;
+}
+
+.nextBtn {
+  background-color: #5f60ff;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nextBtn:hover {
+  color: white;
 }
