@@ -6,7 +6,6 @@
 .rangeInput {
   -webkit-appearance: none;
   height: 0px;
-  margin: 10px 0px;
 }
 .rangeInput::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -20,30 +19,15 @@
   box-shadow: 0px 0px 10px 0px #00000040;
 }
 
-.firstItem {
-  margin-left: -4px;
-  color: #5f60ff;
-}
-
-.lineSize {
-  font-size: 8px;
-}
-
-.itemTop {
+.rangeList {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  overflow: hidden;
+  margin-top: -40px;
   z-index: -100;
-  bottom: 16px !important;
 }
 
-.beginItem {
-  color: #5f60ff;
-  margin-left: 60px;
-}
-.endItem {
-  color: #5f60ff;
-  margin-left: 55px;
-}
-
-.lastItem {
-  color: #5f60ff;
-  margin-left: 69px;
+.line {
+  font-size: 10px;
 }

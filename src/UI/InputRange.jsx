@@ -10,52 +10,53 @@ const InputRange = ({ rangeValue, setRangeValue }) => {
         min={1}
         max={10}
         step={1}
-        className={`rangeInput w-100 my-5 `}
+        className="rangeInput my-5"
+        list="number"
       />
-      <div className="position-absolute bottom-0 start-50 translate-middle-x itemTop">
-        <div className="d-flex">
-          <span className="text-center firstItem">
-            <div className="active lineSize">|</div>
+      <datalist class="rangeList active" id="number">
+        <div className="d-flex text-start flex-column ">
+          <span className="line">|</span>
+          <option>
             <div>1</div>
-          </span>
-          <span className="text-center ps-5 beginItem">
-            <div className="active lineSize">|</div>
-            <div>2</div>
-          </span>
-          <span className="text-center ps-5 beginItem">
-            <div className="active lineSize">|</div>
-            <div>3</div>
-          </span>
-          <span className="text-center ps-5 beginItem">
-            <div className="active lineSize">|</div>
-            <div>4</div>
-          </span>
-          <span className="text-center ps-5 beginItem">
-            <div className="active lineSize">|</div>
-            <div>5</div>
-          </span>
-          <span className="text-center ps-5 endItem">
-            <div className="active lineSize">|</div>
-            <div>6</div>
-          </span>
-          <span className="text-center ps-5 endItem">
-            <div className="active lineSize">|</div>
-            <div>7</div>
-          </span>
-          <span className="text-center ps-5 endItem">
-            <div className="active lineSize">|</div>
-            <div>8</div>
-          </span>
-          <span className="text-center ps-5 endItem">
-            <div className="active lineSize">|</div>
-            <div>9</div>
-          </span>
-          <span className="text-center ps-5 lastItem">
-            <div className="active lineSize">|</div>
-            <div>10</div>
-          </span>
+          </option>
         </div>
-      </div>
+        <div className="d-flex text-center flex-column">
+          <div className="ms-1 line">|</div>
+          <option>2</option>
+        </div>
+        <div className="ms-1 d-flex text-center flex-column">
+          <div className="line">|</div>
+          <option>3</option>
+        </div>
+        <div className="ms-1 d-flex text-center flex-column">
+          <div className="line">|</div>
+          <option>4</option>
+        </div>
+        <div className="ms-1 d-flex text-center flex-column">
+          <div className=" line">|</div>
+          <option>5</option>
+        </div>
+        <div className="ms-1 d-flex text-center flex-column">
+          <div className="line">|</div>
+          <option>6</option>
+        </div>
+        <div className="ms-1 d-flex text-center flex-column">
+          <div className="line">|</div>
+          <option>7</option>
+        </div>
+        <div className="ms-1 d-flex text-center flex-column">
+          <div className="line">|</div>
+          <option>8</option>
+        </div>
+        <div className="ms-1 d-flex text-center flex-column">
+          <div className="line">|</div>
+          <option>9</option>
+        </div>
+        <div className="d-flex text-end flex-column">
+          <div className="line">|</div>
+          <option>10</option>
+        </div>
+      </datalist>
     </>
   );
 };
